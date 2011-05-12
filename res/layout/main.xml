@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <TableLayout android:layout_width="match_parent" android:id="@+id/tableLayout1" android:layout_height="wrap_content">
+        <TableRow android:id="@+id/tableRow1" android:layout_width="wrap_content" android:layout_height="wrap_content"></TableRow>
+    </TableLayout>
+    <TextView android:layout_height="wrap_content" android:id="@+id/textView1" android:layout_width="fill_parent" android:text="@string/hello"></TextView>
+    <Button android:id="@+id/button1" android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="Receitas"></Button>
+    <TextView android:layout_height="wrap_content" android:gravity="fill_horizontal" android:id="@+id/textView2" android:layout_width="wrap_content" android:text="TextView Test"></TextView>
+    <RadioGroup android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/radioGroup1">
+        <RadioButton android:layout_height="wrap_content" android:id="@+id/radio0" android:text="RadioButton" android:checked="true" android:layout_width="match_parent"></RadioButton>
+        <RadioButton android:layout_height="wrap_content" android:id="@+id/radio1" android:layout_width="wrap_content" android:text="RadioButton"></RadioButton>
+        <RadioButton android:layout_height="wrap_content" android:id="@+id/radio2" android:layout_width="wrap_content" android:text="RadioButton"></RadioButton>
+    </RadioGroup>
+</LinearLayout>

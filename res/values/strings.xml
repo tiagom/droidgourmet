@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, Main!</string>
+    <string name="app_name">DroidGourmet</string>
+    <string name="but_menu1">but_menu1</string>
+</resources>
