@@ -1,29 +1,49 @@
 package com.isel.pdm.dg.ui;
 
 import android.app.Activity;
-import android.widget.RadioGroup;
+import android.widget.Button;
 
 import com.isel.pdm.dg.R;
  
 public class ComponentStash 
 {
 	
-	private static Activity activity;
-	private static RadioGroup rbgroup1;
+	private Activity activity;
+	private static Button butIngredientes;
+	private static Button butReceitas;
+	private static Button butCompras;
+	private static Button butDispensa;
+	private static Button butAvisos;
 	
 	public ComponentStash( Activity activity ) 
 	{
-		 ComponentStash.activity = activity;
-		 ComponentStash.rbgroup1 = (RadioGroup) ComponentStash.activity.findViewById( R.id.radioGroup1 ); 
+		 this.activity = activity;
+//		 ComponentStash.rbgroup1 = (RadioGroup) ComponentStash.activity.findViewById( R.id.radioGroup1 );
+		 this.butAvisos = (Button) this.activity.findViewById( R.layout.avisos );
 	}
 
-	public static Activity getActivity() 
+	public Activity getActivity() 
 	{
-		return activity;
+		return ComponentStash.this.activity;
 	}
-	
-	public RadioGroup getRbgroup1() 
-	{
-		return rbgroup1;
+
+	public static Button getButIngredientes() {
+		return butIngredientes;
+	}
+
+	public static Button getButReceitas() {
+		return butReceitas;
+	}
+
+	public static Button getButCompras() {
+		return butCompras;
+	}
+
+	public static Button getButDispensa() {
+		return butDispensa;
+	}
+
+	public static Button getButAvisos() {
+		return butAvisos;
 	}
 }

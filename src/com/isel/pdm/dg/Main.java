@@ -3,9 +3,8 @@ package com.isel.pdm.dg;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
-import android.widget.RadioGroup;
-import android.widget.RadioGroup.OnCheckedChangeListener;
+import android.view.View;
+import android.view.View.OnClickListener;
 
 import com.isel.pdm.dg.ui.ComponentStash;
 
@@ -19,13 +18,22 @@ public class Main extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
         stash = new ComponentStash( this );
-        stash.getRbgroup1().setOnCheckedChangeListener( new OnCheckedChangeListener() {
+        
+        stash.getButAvisos().setOnClickListener( new OnClickListener() {
 			
-			public void onCheckedChanged(RadioGroup group, int checkedId) {
+			public void onClick(View v) {
 				// TODO Auto-generated method stub
-				Log.v( "TRACE", " Radio Button Changed\n");
+				
 			}
 		});
+        
+//        stash.getRbgroup1().setOnCheckedChangeListener( new OnCheckedChangeListener() {
+//			
+//			public void onCheckedChanged(RadioGroup group, int checkedId) {
+//				// TODO Auto-generated method stub
+//				Log.v( "TRACE", " Radio Button Changed\n");
+//			}
+//		});
         
         
     }
